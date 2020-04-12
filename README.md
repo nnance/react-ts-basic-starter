@@ -29,8 +29,8 @@ npm run server
 ## How to setup a similar project
 ### Initialize the project
 ```
-git --init
-npm --init
+mkdir my-npm-pkg && cd my-npm-pkg
+git init && npm init -y
 ```
 ### Install dev dependencies
 This project only uses npm for development dependencies
@@ -39,12 +39,19 @@ npm i -D  @types/react @types/react-dom live-server typescript
 ```
 ### Initialize TypeScript
 ```
-tsc --init --module system --moduleResolution node --jsx react --sourceMap --esModuleInterop --target es5 --outFile ./dist/index.js
+tsc --init --module system --moduleResolution node --jsx react --sourceMap --esModuleInterop --target es5 --lib es6,dom --outFile ./dist/index.js
 ```
-### Download the index file
+### Download the following files
 ```
-wget https://raw.githubusercontent.com/nnance/react-ts-basic-starter/master/index.html
+curl https://raw.githubusercontent.com/nnance/react-ts-basic-starter/master/.gitignore > .gitignore
+curl https://raw.githubusercontent.com/nnance/react-ts-basic-starter/master/index.html > index.html
+curl https://raw.githubusercontent.com/nnance/react-ts-basic-starter/master/index.tsx > index.tsx
 ```
-### Code the application
-
-Add the application files in ./src
+### Add the following commands to package.json
+```json
+"build": "tsc",
+"build:watch": "tsc --watch",
+"server": "live-server --ignorePattern=.ts --ignore=./node_modules",
+```
+### Happy coding
+See the Getting Started section to start the project in development mode.
