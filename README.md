@@ -43,7 +43,7 @@ tsc --init --module system --moduleResolution node --jsx react --sourceMap --esM
 ```
 ### Download the index file
 ```
-wget https://raw.githubusercontent.com/username/reponame/path/to/file
+wget https://raw.githubusercontent.com/nnance/react-ts-basic-starter/master/index.html
 ```
 ### Code the application
 
