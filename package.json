@@ -1,0 +1,35 @@
+{
+  "name": "react-mui-todo",
+  "version": "1.0.0",
+  "description": "React TypeScript ProtoType Template",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
+    "build:watch": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline --watch",
+    "server": "live-server --open=\"index.html\" --ignorePattern=.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "systemjs",
+    "mui"
+  ],
+  "author": "Nick Nance",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-modules-systemjs": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "systemjs": "^6.3.0"
+  }
+}
