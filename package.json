@@ -1,7 +1,7 @@
 {
-  "name": "react-mui-todo",
+  "name": "react-ts-basic-starter",
   "version": "1.0.0",
-  "description": "React TypeScript ProtoType Template",
+  "description": "React TypeScript prototype template",
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsc",
