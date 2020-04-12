@@ -27,6 +27,14 @@ npm run server
 ```
 
 ## How to setup a similar project
+Below are a couple of options which includes a one liner as well as a roll your own.  In both cases I recommend adding the commands to the package json file.
+
+### Fastest option
+```
+mkdir my-npm-pkg && cd my-npm-pkg
+/bin/bash -c "$(curl -fsSL https://gist.githubusercontent.com/nnance/43a4c529877efaf54e68f0ecabb0013c/raw/261e977cc75a7d9a9d992a78dcfc3ea9e6446804/create-react-ts.sh)"
+```
+
 ### Initialize the project
 ```
 mkdir my-npm-pkg && cd my-npm-pkg
